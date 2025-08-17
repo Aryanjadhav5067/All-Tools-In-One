@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Work Suite - 100+ Online Tools</title>
+  <title>Ultimate AI Work Suite – 105+ Tools</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <!-- Google Identity Services -->
@@ -13,9 +13,9 @@
 </head>
 <body>
   <header>
-    <h1>AI Work Suite</h1>
+    <h1>Ultimate AI Work Suite</h1>
     <nav>
-      <input type="search" id="search-input" placeholder="Find a tool...">
+      <input type="search" id="search-input" placeholder="Search from 100+ tools...">
       <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
     </nav>
     <div id="g_id_onload"
@@ -23,7 +23,7 @@
          data-auto_prompt="false"
          data-callback="handleCredentialResponse">
     </div>
-    <div class="g_id_signin" 
+    <div class="g_id_signin"
          data-type="standard"
          data-shape="pill"
          data-theme="outline"
@@ -44,7 +44,7 @@
   </div>
 
   <main>
-    <h2>100+ Powerful Tools for Every Need</h2>
+    <h2>105+ Smart Online Tools at Your Service</h2>
     <div id="tools-grid" class="tools-grid"></div>
   </main>
 
@@ -59,15 +59,16 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>
-    <p>&copy; 2025 AI Work Suite. All rights reserved.</p>
+    <p>&copy; 2025 Ultimate AI Work Suite. All rights reserved.</p>
   </footer>
-  <!-- Tool popup modal -->
+
+  <!-- Modal for each tool popup -->
   <div id="tool-modal" class="modal">
     <div class="modal-content">
       <span id="close-modal">&times;</span>
       <div id="modal-tool-content"></div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
