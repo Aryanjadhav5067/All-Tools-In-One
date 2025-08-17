@@ -64,7 +64,7 @@ nav input[type=search] {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1380px;
   margin: auto;
   padding: 2em 1em;
 }
@@ -73,11 +73,12 @@ h2 {
   text-align: center;
   color: var(--accent);
   margin-bottom: 2em;
+  font-size: 2em;
 }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
   gap: 1.5em;
 }
 
@@ -90,12 +91,12 @@ h2 {
   text-align: center;
   cursor: pointer;
   transition: border 0.3s, box-shadow 0.3s;
-  min-height: 180px;
+  min-height: 160px;
   position: relative;
 }
 .tool-card:hover {
-  border: 2px solid var(--accent2);
-  box-shadow: 0 20px 40px rgba(178,0,250,0.12), 0 1.5px 7px #bbb;
+  border: 2.5px solid var(--accent2);
+  box-shadow: 0 18px 38px rgba(178,0,250,0.12), 0 1.5px 7px #bbb;
   background: #f4eaff;
 }
 .tool-card h3 {
@@ -115,7 +116,7 @@ h2 {
   color: #fff;
   border-radius: 8px;
   padding: 0.3em 0.9em;
-  font-size: 0.86em;
+  font-size: 0.84em;
   font-weight: bold;
 }
 
@@ -148,7 +149,7 @@ footer {
   border: 2px solid var(--accent);
   border-radius: 16px;
   width: 80%;
-  max-width: 450px;
+  max-width: 480px;
   position: relative;
 }
 #close-modal {
@@ -160,7 +161,7 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .tools-grid {grid-template-columns: repeat(auto-fill,minmax(180px,1fr));}
+  .tools-grid {grid-template-columns: repeat(auto-fill,minmax(170px,1fr));}
 }
 @media (max-width: 600px) {
   main {padding: 1em 0.2em;}
