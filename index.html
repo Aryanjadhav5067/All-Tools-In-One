@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Brilliant All-in-One AI Tools</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- AdSense placeholder -->
+  <script data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Brilliant All-in-One AI Tools</h1>
+    <nav>
+      <button class="tab-btn active" onclick="openTab('education')">Education</button>
+      <button class="tab-btn" onclick="openTab('editing')">Editing</button>
+      <button class="tab-btn" onclick="openTab('convert')">File Converter</button>
+    </nav>
+  </header>
+  <div class="adsense">
+    <!-- AdSense Slot Placeholder -->
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+      data-ad-slot="1234567890"
+      data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <main>
+    <!-- Education -->
+    <section id="education" class="tab-content active">
+      <h2>Education Tools</h2>
+      <div class="tool-section">
+        <div class="tool">
+          <h3>Quiz Generator</h3>
+          <textarea placeholder="Paste your notes or topic..."></textarea>
+          <button onclick="generateQuiz()">Generate Quiz</button>
+          <div id="quizResult" class="result"></div>
+        </div>
+        <div class="tool">
+          <h3>Summarizer</h3>
+          <textarea placeholder="Paste long text here..."></textarea>
+          <button onclick="summarizeText()">Summarize</button>
+          <div id="summaryResult" class="result"></div>
+        </div>
+        <div class="tool">
+          <h3>Math Solver</h3>
+          <input type="text" id="mathInput" placeholder="Enter equation (e.g., 2x+4=8)">
+          <button onclick="solveMath()">Solve</button>
+          <div id="mathResult" class="result"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Editing -->
+    <section id="editing" class="tab-content">
+      <h2>Editing Tools</h2>
+      <div class="tool-section">
+        <div class="tool">
+          <h3>Grammar Checker</h3>
+          <textarea placeholder="Paste text..."></textarea>
+          <button onclick="checkGrammar()">Check Grammar</button>
+          <div id="grammarResult" class="result"></div>
+        </div>
+        <div class="tool">
+          <h3>Paraphraser</h3>
+          <textarea placeholder="Paste text..."></textarea>
+          <button onclick="paraphraseText()">Paraphrase</button>
+          <div id="paraphraseResult" class="result"></div>
+        </div>
+        <div class="tool">
+          <h3>Text Editor</h3>
+          <textarea id="editorArea" rows="8"></textarea>
+          <div class="editor-btns">
+            <button onclick="uppercaseEditor()">Uppercase</button>
+            <button onclick="lowercaseEditor()">Lowercase</button>
+            <button onclick="clearEditor()">Clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- File Converter -->
+    <section id="convert" class="tab-content">
+      <h2>File Converter Tools</h2>
+      <div class="tool-section">
+        <div class="tool">
+          <h3>PDF to Word</h3>
+          <input type="file" accept=".pdf">
+          <button onclick="convertPDFtoWord()">Convert</button>
+          <div class="result">(Simulated conversion)</div>
+        </div>
+        <div class="tool">
+          <h3>Image to PDF</h3>
+          <input type="file" accept="image/*" multiple>
+          <button onclick="convertImageToPDF()">Convert</button>
+          <div class="result">(Simulated conversion)</div>
+        </div>
+        <div class="tool">
+          <h3>Audio to Text</h3>
+          <input type="file" accept="audio/*">
+          <button onclick="convertAudioToText()">Convert</button>
+          <div class="result">(Simulated conversion)</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="adsense adsense-footer">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-slot="0987654321"
+        data-ad-format="auto"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <p>&copy; 2025 Brilliant AI Tools Suite. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
