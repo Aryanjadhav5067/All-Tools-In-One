@@ -1,75 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ultimate AI Work Suite – 105+ Tools</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Identity Services -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-  <!-- AdSense placeholder -->
-  <script data-ad-client="ca-pub-5739867765605477" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Hub - 100+ Powerful Tools in One Place</title>
+    <meta name="description" content="Free online AI tools for education, writing, file conversion, productivity and more. All tools work instantly in your browser.">
+    <link rel="stylesheet" href="css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.16.0/pdf-lib.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Ultimate AI Work Suite</h1>
-    <nav>
-      <input type="search" id="search-input" placeholder="Search from 100+ tools...">
-      <button onclick="logout()" id="logoutBtn" style="display:none;">Logout</button>
-    </nav>
-    <div id="g_id_onload"
-         data-client_id="YOUR_GOOGLE_CLIENT_ID"
-         data-auto_prompt="false"
-         data-callback="handleCredentialResponse">
-    </div>
-    <div class="g_id_signin"
-         data-type="standard"
-         data-shape="pill"
-         data-theme="outline"
-         data-text="signin_with"
-         data-size="large">
-    </div>
-    <div id="user-info"></div>
-  </header>
-  <div class="adsense">
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-      data-ad-slot="1234567890"
-      data-ad-format="auto"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AI Tools Hub</h1>
+                <p>100+ Powerful Tools in One Place</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#writing">Writing</a></li>
+                    <li><a href="#file">File Tools</a></li>
+                    <li><a href="#productivity">Productivity</a></li>
+                    <li><a href="#ai">AI Tools</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search tools...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <h2>105+ Smart Online Tools at Your Service</h2>
-    <div id="tools-grid" class="tools-grid"></div>
-  </main>
-
-  <footer>
-    <div class="adsense adsense-footer">
-      <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-        data-ad-slot="0987654321"
-        data-ad-format="auto"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+    <div class="ad-banner">
+        <div class="container">
+            <!-- AdSense Banner Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
-    <p>&copy; 2025 Ultimate AI Work Suite. All rights reserved.</p>
-  </footer>
 
-  <!-- Modal for each tool popup -->
-  <div id="tool-modal" class="modal">
-    <div class="modal-content">
-      <span id="close-modal">&times;</span>
-      <div id="modal-tool-content"></div>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Your Ultimate AI-Powered Toolkit</h2>
+                <p>Access 100+ free tools for education, writing, productivity, file conversion and more. All tools work instantly in your browser with no installation required.</p>
+                <div class="cta-buttons">
+                    <a href="#featured-tools" class="btn primary">Explore Tools</a>
+                    <a href="#popular-tools" class="btn secondary">Most Popular</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/ai-tools-hero.png" alt="AI Tools Illustration">
+            </div>
+        </section>
+
+        <!-- Featured Tools Section -->
+        <section id="featured-tools" class="featured-tools">
+            <h2>Featured Tools</h2>
+            <div class="tools-grid">
+                <!-- Tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- AdSense In-Article Ad -->
+        <div class="ad-in-article">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Education Tools Section -->
+        <section id="education" class="category-section">
+            <h2><i class="fas fa-graduation-cap"></i> Education Tools</h2>
+            <div class="category-description">
+                <p>Enhance your learning experience with these powerful educational tools designed for students and teachers.</p>
+            </div>
+            <div class="tools-grid" id="education-tools">
+                <!-- Education tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Writing & Editing Tools Section -->
+        <section id="writing" class="category-section">
+            <h2><i class="fas fa-edit"></i> Writing & Editing Tools</h2>
+            <div class="category-description">
+                <p>Improve your writing with these AI-powered tools for editing, formatting, and content creation.</p>
+            </div>
+            <div class="tools-grid" id="writing-tools">
+                <!-- Writing tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- File Converter Tools Section -->
+        <section id="file" class="category-section">
+            <h2><i class="fas fa-file-alt"></i> File Converter Tools</h2>
+            <div class="category-description">
+                <p>Convert between file formats quickly and easily with our browser-based conversion tools.</p>
+            </div>
+            <div class="tools-grid" id="file-tools">
+                <!-- File tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Productivity Tools Section -->
+        <section id="productivity" class="category-section">
+            <h2><i class="fas fa-tasks"></i> Productivity Tools</h2>
+            <div class="category-description">
+                <p>Boost your efficiency with these time-saving productivity utilities and organizers.</p>
+            </div>
+            <div class="tools-grid" id="productivity-tools">
+                <!-- Productivity tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- AI-Powered Tools Section -->
+        <section id="ai" class="category-section">
+            <h2><i class="fas fa-robot"></i> AI-Powered Tools</h2>
+            <div class="category-description">
+                <p>Harness the power of artificial intelligence with these advanced tools for content creation and analysis.</p>
+            </div>
+            <div class="tools-grid" id="ai-tools">
+                <!-- AI tools will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- AdSense Bottom Ad -->
+        <div class="ad-bottom">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About AI Tools Hub</h3>
+                    <p>AI Tools Hub provides free, browser-based tools to help with education, writing, productivity, and more. All tools work instantly with no installation required.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#education">Education Tools</a></li>
+                        <li><a href="#writing">Writing Tools</a></li>
+                        <li><a href="#file">File Tools</a></li>
+                        <li><a href="#productivity">Productivity Tools</a></li>
+                        <li><a href="#ai">AI Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@aitoolshub.com</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AI Tools Hub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tool Modals -->
+    <div id="tool-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title">Tool Title</h2>
+                <p id="modal-description">Tool description goes here</p>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Tool content will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn primary" id="execute-tool">Run Tool</button>
+                <button class="btn secondary" id="reset-tool">Reset</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="app.js"></script>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Processing...</p>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Main JavaScript -->
+    <script src="js/app.js"></script>
 </body>
 </html>
-
